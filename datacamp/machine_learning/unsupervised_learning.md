@@ -1,5 +1,7 @@
 ## Unsupervised Learning in Python
-> Cluster, transform, visualize, and extract insights from unlabeled datasets using scikit-learn and scipy
+Cluster, transform, visualize, and extract insights from unlabeled datasets using scikit-learn and scipy
+
+---
 
 Chapter Overview:
 - Chapter 1: Clustering for dataset exploration
