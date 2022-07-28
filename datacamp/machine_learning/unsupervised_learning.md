@@ -32,7 +32,7 @@ ys = samples[:,2]
 plt.scatter(xs, ys, c=labels)
 plt.show()
 ```
-![output1](output/ouput1.png)
+![output1](output/unsupervised1.png)
 
 Evaluating Cluster
 ```python
@@ -52,7 +52,7 @@ print(model.inertia_)
 ```
 you can loop to get other intertia to observe best clustering based on 'elbow law'
 
-![output2](output/output2.png)
+![output2](output/unsupervised2.png)
 
 Standar Scaler
  
@@ -86,7 +86,7 @@ pipeline.fit(samples)
 ---
 How dendrograms looks like:
 
-![output3](output/output3.png)
+![output3](output/unsupervised3.png)
 
 Code example hierarchical clustering with SciPy
 ```python
@@ -135,7 +135,7 @@ plt.ylabel('variance')
 plt.xlabel('PCA feature')
 plt.show()
 ```
-![output4](output/output4.png)
+![output4](output/unsupervised4.png)
 
 in order to keep n features you can use this code
 ```python
