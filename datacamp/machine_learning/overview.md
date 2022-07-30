@@ -4,7 +4,7 @@
     - [Chapter 2: Visualizatin with hierarchical clustering and t-SNE](unsupervised_learning.md)
     - [Chapter 3: Decorrelating your data and dimesion reduction](unsupervised_learning.md)
     - [Chapter 4: Discovering interpretable features](unsupervised_learning.md)
-- [Linear Classifier in Python](link.md)
+- [Linear Classifier in Python](linear_classifier.md)
     - [Chapter 1: Applying logistic regression and SVM](link.md)
     - [Chapter 2: Loss functions](link.md)
     - [Chapter 3: Logistic regression](link.md)
