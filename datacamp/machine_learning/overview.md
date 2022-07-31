@@ -25,5 +25,8 @@
     - [Chapter 2: Hierarchical Clustering](link.md)
     - [Chapter 3: K-Means Clustering](link.md)
     - [Chapter 4: Clustering in Real World](link.md)
-
-- [Dimensionality Reduction in Python (On Progress)](link.md)
+- [Dimensionality Reduction in Python (On Progress)](dimensionality_reduction.md)
+    - [Chapter 1. Exploring High Dimensional Data](dimensionality_reduction.md)
+    - [Chapter 2. Feature Selection I - Selecting for the Feature Information](dimensionality_reduction.md)
+    - [Chapter 3. Feature Selection II - Selecting for Model Accuracy](dimensionality_reduction.md)
+    - [Chapter 4. Feature Extraction](dimensionality_reduction.md)
