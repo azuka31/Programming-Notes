@@ -10,4 +10,4 @@
 - [Python Programming in Python Track](/datacamp/machine_learning_in_python_track.md) (Coming Soon)
 
 # Coursera
-- [Causal Inference](/coursera/causal_inference.md)
+- [A Crash Course in Casuality: Inferring Causal Effects from Observational Data](/coursera/causal_inference.md)
