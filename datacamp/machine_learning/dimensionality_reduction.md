@@ -240,5 +240,79 @@ print(meta_mask)
 ```
 
 
-### Feature Extraction
+### Chapter 4. Feature Extraction
 ---
+Feature exctraction: Combining 2 feature. Simple example like,
+- Quantity * Price -> Revenue
+- Matrix vector like A + B -> C, code example
+```python
+# Calculate the mean height
+height_df['height'] = height_df[['height_1','height_2','height_3']].mean(axis=1)
+
+# Drop the 3 original height features
+reduced_df = height_df.drop(['height_1','height_2','height_3'], axis=1)
+```
+This code is known as principal component analysis (PCA)
+
+PCA Code Example:
+```python
+sns.paiplot(ansur_df)
+plt.show()
+```
+![pca2](output/dimensionality_reduction2.png)
+```python
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+
+# Create the scaler
+scaler = StandardScaler()
+ansur_std = scaler.fit_transform(ansur_df)
+
+# Create the PCA instance and fit and transform the data with pca
+pca = PCA()
+pc = pca.fit_transform(ansur_std)
+pc_df = pd.DataFrame(pc, columns=['PC 1', 'PC 2', 'PC 3', 'PC 4'])
+
+# Create a pairplot of the principal component DataFrame
+sns.pairplot(pc_df)
+plt.show()
+```
+![pca3](output/dimensionality_reduction3.png)
+
+See there no longer Covariate after PCA
+
+This code to apply PCA:
+```python
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+
+# Scale the data
+scaler = StandardScaler()
+ansur_std = scaler.fit_transform(ansur_df)
+
+# Apply PCA
+pca = PCA()
+pca.fit(ansur_std)
+print(pca.explained_variance_ratio_)
+```
+```
+[0.61449404 0.19893965 0.06803095 0.03770499 0.03031502 0.0171759 0.01072762 0.00656681 0.00634743 0.00436015 0.0026586  0.00202617 0.00065268] 
+```
+
+PCA Applications
+```python
+pipe = Pipeline([('scaler', StandardScaler()),
+                 ('reducer', PCA(n_components=2))])
+
+# Fit the pipeline to poke_df and transform the data
+pc = pipe.fit_transform(poke_df)
+
+# Add the 2 components to poke_cat_df
+poke_cat_df['PC 1'] = pc[:, 0]
+poke_cat_df['PC 2'] = pc[:, 1]
+
+# Use the Legendary feature to color the PC 1 vs. PC 2 scatterplot
+sns.scatterplot(data=poke_cat_df, 
+                x='PC 1', y='PC 2', hue='Legendary')
+plt.show()
+```
