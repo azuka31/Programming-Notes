@@ -11,3 +11,6 @@
 
 # Coursera
 - [A Crash Course in Casuality: Inferring Causal Effects from Observational Data](/coursera/causal_inference.md)
+
+# Linux Tips
+- sed
