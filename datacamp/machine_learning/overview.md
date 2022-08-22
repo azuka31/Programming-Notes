@@ -36,3 +36,8 @@
     - [Feature Engineering](preprocessing_data.md)
     - [Selecting features for modeling](preprocessing_data.md)
     - [Putting it all together](preprocessing_data.md)
+- [Machine Learning For Time Series Data in Python](time_series.md)
+    - [Time Series and Machine Learning Primer](time_series.md)
+    - [Classifying a time series](time_series.md)
+    - [Predicting data over time](time_series.md)
+    - [Validating and Inspecting Time Series Models](time_series.md)
